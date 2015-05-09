@@ -9,7 +9,8 @@ module RedmineLatexMathjax
     tex2jax: {
       inlineMath: [ ['$','$'] ],
       displayMath: [ ['$$','$$'] ],
-      processEscapes: true
+      processEscapes: true,
+      ignoreClass: 'text-diff'
     },
     'HTML-CSS': { availableFonts: ['TeX'] }
   });
