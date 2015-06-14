@@ -6,7 +6,8 @@ Installation
 ------------
 1. Download archive and extract to `#{RAILS_ROOT}/plugins` (Redmine 2.x) or `#{RAILS_ROOT}/vendor/plugins` (Redmine 1.x).
 2. If you downloaded the zipball (https://github.com/process91/redmine_latex_mathjax/zipball/master), rename the extracted directory to 'redmine_latex_mathjax'
-3. Restart Redmine (e.g. by restarting Apache)
+3. Change `javascript_include_tag('jquery-2.1.4.min.js')` to your Redmine's jQuery on `redmine_latex_mathjax\lib\redmine_latex_mathjax\hooks\view_layouts_base_html_head_hook.rb`. (compatible with [Clipboard image paste plugin](https://github.com/peclik/clipboard_image_paste))
+4. Restart Redmine (e.g. by restarting Apache)
 
 Login to Redmine and go to Administration->Plugins. You should now see 'Redmine LaTeX MathJax', which indicates it is installed. Enjoy!
 
